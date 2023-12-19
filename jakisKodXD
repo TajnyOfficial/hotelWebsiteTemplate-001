@@ -1,0 +1,57 @@
+
+    <div id="poland-map">
+        <img src="mapa-polski-kontury-szablon.jpg" alt="Mapa Polski" usemap="#poland-map-area">
+        <div id="marker-warsaw" onclick="goToWarsaw()">Warszawa</div>
+        <div id="marker-krakow" onclick="goToKrakow()">Kraków</div>
+    </div>
+
+    <map name="poland-map-area">
+        <!-- Koordynaty dla obszarów klikalnych - dostosuj do swojej mapy -->
+        <area shape="circle" coords="210,70,10" href="warsaw.html" alt="Warszawa">
+        <area shape="circle" coords="150,230,10" href="krakow.html" alt="Kraków">
+        <!-- Dodaj więcej obszarów, jeśli jest to konieczne -->
+    </map>
+
+    <script>
+        function goToWarsaw() {
+            window.location.href = "warsaw.html";
+        }
+
+        function goToKrakow() {
+            window.location.href = "krakow.html";
+        }
+        // Dodaj więcej funkcji, jeśli masz więcej obszarów
+    </script>
+
+    <style>
+        /* Styl do celów prezentacyjnych - dostosuj do swoich potrzeb */
+        #poland-map {
+            position: relative;
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        #poland-map img {
+            width: 100%;
+            height: auto;
+        }
+
+        #marker-warsaw {
+            position: absolute;
+            top: 70px;
+            left: 210px;
+            font-size: 16px;
+            color: red;
+            cursor: pointer;
+        }
+
+        #marker-krakow {
+            position: absolute;
+            top: 230px;
+            left: 150px;
+            font-size: 16px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+

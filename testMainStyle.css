@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+/* ===================================MENU================================= */
+
+/* Resetowanie stylów dla listy */
+/* ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styl menu */
+/* .menu {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+} */
+
+/* Styl linków w menu */
+/* .menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+} */
+
+/* Styl rozwijanych podmenu */
+/* .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+} */
+
+/* Pokazanie/ukrycie podmenu po kliknięciu przycisku */
+/* .menu.active .submenu {
+    display: block;
+} */ 
+
+/* ===========================pokazywanie tekstu z opoznieniem======================= */
+
+/* #myText {
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+#myText.show {
+    opacity: 1;
+}
+
+#myText.remove {
+    opacity: 0;
+} */
+
+/* =================================wysuwanie tekstu=============================== */
+
+/* #myText {
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: black;
+}
+
+#myText.show {
+    opacity: 1;
+}
+
+#myText.remove {
+    opacity: 0;
+} */
+
+
+/* ========================================================================== */
