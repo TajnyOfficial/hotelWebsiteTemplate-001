@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="testMainStyle.css"> -->
+    <script src="testScript.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text">
+            40. Nagrywanie na kanałach głosowych jest dozwolone jedynie w przypadku, 
+            gdy każdy z obecnych na kanale wyrazi na to zgodę, bądź w celach 
+            dowodowych do zgłoszenia innej osoby jeśli ta łamie regulamin.<br>
+            
+        </div>
+        <button class="buttom">START</button>
+      </div>
+
+
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+        }
+    
+        .container {
+          position: relative;
+          overflow: hidden;
+          width: 400px;
+          height: 150px;
+          border: 1px solid #ccc;
+          display: grid;
+          place-items: center;
+          grid-row: auto auto;
+
+          background-image: url('pictures/habib.jpg');
+        background-size: cover; /* dostosowuje obraz do rozmiaru ekranu */
+        background-position: center; /* ustawia obraz na środku */
+        background-repeat: no-repeat; /* zapobiega powtarzaniu obrazu */
+        }
+    
+        .text {
+          text-align: center;
+          position: absolute;
+          bottom: -100%;
+          left: 0;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+          transition: bottom 0.70s ease, opacity 2.5s ease; /* Dodaj animację przeźroczystości */
+          opacity: 0; /* Ukryj tekst na początku */
+        }
+    
+        .buttom {
+            
+            position: absolute;
+            background-color: black;
+            color: white;
+            bottom: -100%;
+            opacity: 0;
+            transition: bottom 0.72s ease, opacity 2.5s ease; /* Dodaj animację przeźroczystości */
+            text-align: center;
+        }
+
+        .container:hover .text {
+          bottom: 25px;
+          opacity: 1.0; /* Pokaż tekst z efektem przeźroczystości */
+        }
+        .container:hover .buttom {
+          bottom: 10px;
+          opacity: 1.0; /* Pokaż tekst z efektem przeźroczystości */
+        }
+
+      </style>
+
+</body>
+</html>
